@@ -1,15 +1,21 @@
 import React from 'react';
-import App from './components/App';
+import App from './App';
+import Home from './components/Home';
 import UserList from './components/UsersList'
 
 export default [
     {
         ...App,
-        path: '/',
-        exact: true
-    },
-    {
-        ...UserList,
-        path: '/users'
+        routes: [
+            {
+                ...Home,
+                path: '/',
+                exact: true
+            },
+            {
+                ...UserList,
+                path: '/users'
+            }
+        ]
     }
-]
+];
