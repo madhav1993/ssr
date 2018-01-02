@@ -1,0 +1,2 @@
+# ssr
+run npm dev
